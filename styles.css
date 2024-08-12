@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(31, 30, 30);
+    margin: 8rem;
+    font-family: "roboto", sans-serif;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    /* this si how to center inline elements */
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+label {
+    margin: 0.5rem;
+    display: block;
+
+}
+
+input {
+    width: 100%;
+    /* this will adapt to the changes of the parent element */
+    display: block;
+    /*  this will make inline block beahev like a block vertical */
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    /* this element is not adapting the widt as epxceted to this property adjust the widt to the box we just created */
+    font: inherit;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
+
+}
+
+input:focus {
+    /* foucs is similar to hover but when the element is being used/focused */
+    background-color: rgb(162, 162, 212);
+    color: rgb(56, 1, 107);
+    border-color: rgb(56, 1, 107);
+}
+
+button {
+    display: block;
+    /* font: normal 1rem 'robot';  */
+    /* this proeprty is to define the font size and style */
+    font: inherit;
+    /* since browser properties over write the styling we can use inherit to impose our style over browser defualts */
+    background-color: rgb(32, 6, 56);
+    color: white;
+    border: 1px solid rgb(32, 6, 56);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor:pointer /* it changes the pointer to what ever shape when passing over the targeted element */
+}
+
+button:hover {
+    background-color: rgb(56, 1, 107);
+    border-color: rgb(56, 1, 107);
+}
