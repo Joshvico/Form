@@ -52,10 +52,20 @@ button {
     border: 1px solid rgb(32, 6, 56);
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
-    cursor:pointer /* it changes the pointer to what ever shape when passing over the targeted element */
+    cursor: pointer
+        /* it changes the pointer to what ever shape when passing over the targeted element */
 }
 
 button:hover {
     background-color: rgb(56, 1, 107);
     border-color: rgb(56, 1, 107);
+}
+
+.form-control-inline {
+    display: flex;
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
 }
