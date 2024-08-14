@@ -4,6 +4,17 @@ body {
     font-family: "roboto", sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
+ul {
+    /* we eliminate any desing efect on their default settings */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 form {
     width: 30rem;
     margin: 3rem auto;
@@ -19,7 +30,10 @@ label {
 
 }
 
-input {
+input,
+textarea,
+select {
+    /* " , " will allow me to group different elements with smae style attb */
     width: 100%;
     /* this will adapt to the changes of the parent element */
     display: block;
@@ -34,7 +48,9 @@ input {
 
 }
 
-input:focus {
+
+input:focus,
+textarea:focus {
     /* foucs is similar to hover but when the element is being used/focused */
     background-color: rgb(162, 162, 212);
     color: rgb(56, 1, 107);
@@ -52,8 +68,9 @@ button {
     border: 1px solid rgb(32, 6, 56);
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
-    cursor: pointer
-        /* it changes the pointer to what ever shape when passing over the targeted element */
+    cursor: pointer;
+    /* it changes the pointer to what ever shape when passing over the targeted element */
+    margin-top: 0.5rem;
 }
 
 button:hover {
@@ -67,5 +84,5 @@ button:hover {
 
 .form-control-inline input {
     width: auto;
-    margin-right: 0.5rem;
+    margin: 0.5rem;
 }
