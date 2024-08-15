@@ -48,6 +48,11 @@ select {
 
 }
 
+textarea {
+    resize: none;
+    /* this will avoid sizenig textarea*/
+    /*     resize: vertical; */
+}
 
 input:focus,
 textarea:focus {
@@ -56,6 +61,7 @@ textarea:focus {
     color: rgb(56, 1, 107);
     border-color: rgb(56, 1, 107);
 }
+
 
 button {
     display: block;
