@@ -1,0 +1,53 @@
+body {
+    --font-family: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --primary-color: #c5e9ff;
+    --secondary-color: #ecedee;
+
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    box-shadow: 1px 1px 20px gray;
+    width: 30rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0.5em;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
+
+}
+
+textarea {
+    box-sizing: none;
+}
