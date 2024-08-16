@@ -49,5 +49,13 @@ textarea {
 }
 
 textarea {
-    box-sizing: none;
+    resize: none;
+}
+
+.checkbox {
+    display: flex;
+}
+.checkbox {
+    width: auto;
+    margin: 0.5rem;
 }
