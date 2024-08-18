@@ -12,15 +12,17 @@ body {
 
 h1 {
     text-align: center;
+    font-family: var(--font-weight-bold);
+    margin: 2rem;
 }
 
 form {
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: var(--secondary-color);
-    box-shadow: 1px 1px 20px gray;
-    width: 30rem;
-    margin: 2rem auto;
-    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    width: 40rem;
+    margin: auto;
+    padding: 1rem;
 }
 
 ul {
@@ -30,32 +32,85 @@ ul {
 }
 
 label {
-    margin: 0.5em;
+    color: rgb(92, 99, 114);
+    margin: 0.5rem 0;
+    font-weight: bold;
     display: block;
 }
 
 input,
 select,
 textarea {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid rgb(152, 159, 184);
     width: 100%;
+    border-radius: 4px;
     display: block;
     margin-bottom: 1rem;
     box-sizing: border-box;
-    font: inherit;
-    border: 1px solid rgb(184, 184, 184);
-    padding: 0.25rem;
-    color: rgb(61, 58, 58);
+    padding: 0.5rem;
 
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(203, 221, 249);
 }
 
 textarea {
     resize: none;
 }
 
+#form-btn {
+    text-align: right;
+    /* this puts the buttons to the right */
+}
+
+button {
+    font: inherit;
+    border: 1px solid rgb(51, 67, 100);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-filled {
+    background-color: rgb(51, 67, 100);
+    color: white;
+}
+
+.btn-empty {
+    background-color: transparent;
+    color: rgb(51, 67, 100);
+}
+
+.btn-filled:hover {
+    background-color: rgb(69, 89, 129);
+    ;
+    border-color: rgb(69, 89, 129);
+}
+
+.btn-empty:hover {
+    background-color: rgb(208, 215, 230);
+    ;
+}
+
+
+
+/* ------------------- BELOW This styling part alloww you to set radio buttons correctly to match the style you can see in the display */
 .checkbox {
     display: flex;
-}
-.checkbox {
-    width: auto;
     margin: 0.5rem;
 }
+
+.checkbox label {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+/* ------------------- ABOVE alloww you to set radio buttons correctly to match the style you can see in the display */
